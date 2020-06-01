@@ -6,25 +6,36 @@ using namespace std;
 
 void input(vector<int> &arr1,vector<int> &arr2)
 {
+  cout<<"Enter the 1st Array: "<<endl;
   for(int i=0;i<arr1.size();i++)
     cin>>arr1[i];
+
+  cout<<"Enter the 2nd Array: "<<endl;
   for(int i=0;i<arr2.size();i++)
-    cin>>arr2[i];
+    cin>>arr2[i];    
 }
 
 void display(vector<int> &ans)
 {
   cout<<"Intersected Array: [";  
+  
+  bool flag = false; 
+  
   for(int i:ans)
   {
-    if(i==0)
+    if(i!=0) 
+      flag = true;
+
+    if(flag == false)
       continue;
+    
     else   
       cout<<i;
-      
+    
     if(i<ans.size())  
       cout<<",";  
   }    
+
   cout<<"]";
   cout<<endl;
 }
@@ -104,7 +115,6 @@ int main(int args,char** argv)
   else
   {  
    vector<int> arr1(n,0),arr2(m,0);
-   cout<<"Enter the 2 Array's: "<<endl;
    input(arr1,arr2);
    Sort(arr1);
    Sort(arr2);

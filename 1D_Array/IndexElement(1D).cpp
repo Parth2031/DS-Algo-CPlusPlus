@@ -19,17 +19,18 @@ int IndexOnWhichElementFound(vector<int> &arr,int x)
   return -1; 
 }
 
-int isNumber(int s)
+int isNumber(char s)
 {
-  if (isdigit(s) == 0) 
-    return 0; 
-  else   
+  if (isdigit(s))
     return 1; 
+  else   
+    return 0; 
 }
 
 int main(int args,char** argv)
 {
-  int n,x;
+  int n;
+  char x;
   cout<<endl<<"Enter the size of array: ";
   cin>>n;
   if(n<0)
@@ -42,7 +43,7 @@ int main(int args,char** argv)
    cout<<"Enter the Element to be searched: ";
    cin>>x;
    if(isNumber(x))
-     cout<<"Index on which Element Found from 1st occurance: "<<IndexOnWhichElementFound(arr,x)<<endl;
+     cout<<"Index on which Element Found from 1st occurance: "<<IndexOnWhichElementFound(arr,(x-'0'))<<endl;
    else
      cout<<"Invalid Input";     
    } 

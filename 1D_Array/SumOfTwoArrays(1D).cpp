@@ -2,19 +2,24 @@
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
+
 using namespace std;
 
 void input(vector<int> &arr1,vector<int> &arr2)
 {
-  for(int i=0;i<arr.size();i++)
+  cout<<"Enter the 1st Array: "<<endl;
+  for(int i=0;i<arr1.size();i++)
     cin>>arr1[i];
 
+  cout<<"Enter the 2nd Array: "<<endl;
   for(int i=0;i<arr2.size();i++)
     cin>>arr2[i];    
 }
 
 void display(vector<int>& TotalSum)
 {
+  cout<<"Sum of Two Array's with Carry: "<<endl;
   for(int i:TotalSum)
     cout<<i<<" ";
   cout<<endl;
@@ -22,51 +27,28 @@ void display(vector<int>& TotalSum)
 
 void SumofTwoArrays(vector<int> &arr1,vector<int> &arr2,int n,int m)
 {
-  int k,sum=0,carry=0,check;
-  vector<int> TotalSum(k,0);
-  k=arr1.size();
-  if(arr1.size()==arr2.size())
-  {
-    for(int i=arr1.size();i>=0;i--)
-    {
-      check=arr1[i]+arr2[i];
-      sum=check % 10;
-      TotalSum[k]=sum+carry;
-      carry=check / 10;
-      k--;
-    } 
+  int sum=0,carry=0,check;
+  vector<int> TotalSum;
+
+  int i = arr1.size()-1 ,j = arr2.size()-1;
+  
+  for(; i>=0 || j>=0; i--,j--) 
+  {                          
+    check=carry;
+
+    if(i>=0) check+=arr1[i];
+    if(j>=0) check+=arr2[j];
+    
+    sum=check % 10;
+    TotalSum.push_back(sum);
+    carry=check / 10;
   }
-  else if(arr1.size() > arr2.size())
-  {
-    arr2[m]=0;
-    for(int i=arr1.size();i>=0;i--)
-    {
-      if(i==arr1.size())
-        arr2[i]=0;
-       
-      check=arr1[i]+arr2[i];
-      sum=check % 10;
-      TotalSum[k]=sum+carry;
-      carry=check / 10;
-      k--;
-    } 
-  }
-  else
-  {
-    k=arr2.size();
-    arr1[n]=0;
-    for(int i=arr2.size();i>=0;i--)
-    {
-      if(i==arr2.size())
-        arr1[i]=0;
-       
-      check=arr1[i]+arr2[i];
-      sum=check % 10;
-      TotalSum[k]=sum+carry;
-      carry=check / 10;
-      k--;
-    }  
-  }
+
+  if(carry!=0) 
+    TotalSum.push_back(carry);
+  
+  reverse(TotalSum.begin() , TotalSum.end());
+
   display(TotalSum);  
 }
 
@@ -82,7 +64,6 @@ int main(int args,char** argv)
   else
   {  
    vector<int> arr1(n,0),arr2(m,0);
-   cout<<"Enter the 2 Array's: "<<endl;
    input(arr1,arr2);
    SumofTwoArrays(arr1,arr2,n,m); 
   }
