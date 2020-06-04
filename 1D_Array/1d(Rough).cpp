@@ -1,5 +1,6 @@
 // ! Kadanes Algorithm is Remaining
 // ! Intersection still problem with :- (0 1 2 3 4) & (2 3 4 5)
+// ! Sum of two arrays (0 0 0 + 0 0 0) = (0 0 3) showing
 // ! Target Sum and Target Sum Triplet (Not able to do)
 
 // ! Remaining Programs to be done :->>
