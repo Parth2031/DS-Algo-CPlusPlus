@@ -1,4 +1,4 @@
-// ? Print a Number in it's Reverse Order. Example:--> 9312 as 2139,etc.
+// ^ Print a Number in it's Reverse Order. Example:--> 9312 as 2139,etc.
 
 #include<iostream>
 using namespace std;

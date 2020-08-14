@@ -1,7 +1,7 @@
-// TODO:: There are Various Types of Pattern and it's result output is at buttom-->
+// TODO:: There are Various Types of Pattern and it's result output is at buttom -->
 
-// TODO:: Some abbreviation in Pattern Questions are: csp-count of spaces & nsp-number of spaces.
-// TODO::                                           : cst-count of stars  &  nst-number of stars.
+// ! Some abbreviation in Pattern Questions are: csp-count of spaces & nsp-number of spaces.
+// ?                                           : cst-count of stars  &  nst-number of stars.
 
 #include<iostream>
 using namespace std;

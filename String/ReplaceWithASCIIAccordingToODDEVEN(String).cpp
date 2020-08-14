@@ -1,5 +1,5 @@
-// TODO:: In Order to get a ASCII Value of a character as an Integer value, we use int index = int(ch).
-// TODO:: In Order to get a Character from Integer ASCII Value, we use char ch = char(index).
+// ^ In Order to get a ASCII Value of a character as an Integer value, we use int index = int(ch).
+// & In Order to get a Character from Integer ASCII Value, we use char ch = char(index).
 
 // ! Replace Even Index with its higher ASCII value code character and vice versa for Odd Index with its lower ASCII value character.
 // ? Example: {a,b,c,d} as {b,a,d,c} as per the Index Position and Another Example: {. , / ' ;} as {/ + 0 & <}.

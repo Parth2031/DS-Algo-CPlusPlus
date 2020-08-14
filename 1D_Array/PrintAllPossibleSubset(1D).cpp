@@ -23,7 +23,7 @@ void PrintAllPossibleSubset(vector<int> &arr,int n)
     {
       // ! This if condition will check if jth bit in binary representation of  i  is set or not.
 			// * If the value of (i & (1 << j)) is greater than 0 , include arr[j] in the current subset, otherwise exclude arr[j].
-      // ! In this i and j values are treated as binary numbers like 000,001,010,etc.
+      // ? In this i and j values are treated as binary numbers like 000,001,010,etc.
       
       if((i & (1<<j)) > 0)
         cout<<arr[j]<<" ";

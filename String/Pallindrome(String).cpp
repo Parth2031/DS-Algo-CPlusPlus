@@ -1,6 +1,6 @@
 // TODO:: There are 2 Questions: Check isPallindrome and Print & Count all Pallindromic Substrings.
 
-// TODO:: In this, A Pallindrome means if reverse of the string is same as starting string. Example:--> abbcca,abba,etc.
+// & In this, A Pallindrome means if reverse of the string is same as starting string. Example:--> abbcca,abba,etc.
 // ? In this, Lowercase Characters are treated same as Uppercase Characters.
 // * isPallindrome Question was solved using 2 methods--> String and Character Array.
 

@@ -1,5 +1,6 @@
 // TODO:: In Inverse, we swap the index with value of array. 
-// TODO:: Done in 2 ways :-->
+
+// ! Done in 2 ways :-->
 // ? Inversed an Array and then Checked whether it is Inverse of that Array or Not.
 // ? Input the Array and its Inversed Array and Checked whether they are same or not.
 

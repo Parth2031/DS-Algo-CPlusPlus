@@ -1,6 +1,6 @@
 // ? There are 3 Questions :-->
-// TODO: (1) Print Triangle & (2) Inverted Triangle Pattern using Recursion.
-// TODO: (3) Print Binomial Pattern using Recursion.
+// ^ (1) Print Triangle & (2) Inverted Triangle Pattern using Recursion.
+// & (3) Print Binomial Pattern using Recursion.
 // ! Recursion in this type of Question can be done only by Void Type.
 
 #include<iostream>

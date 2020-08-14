@@ -1,4 +1,4 @@
-// ? Input a number like:{13355335} and digit like:{3}. Each and every index number will be compared by digit and counts as output so Result:{4}.
+// ^ Input a number like:{13355335} and digit like:{3}. Each and every index number will be compared by digit and counts as output so Result:{4}.
 
 #include<iostream>
 using namespace std;

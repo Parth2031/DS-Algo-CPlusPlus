@@ -1,4 +1,4 @@
-// TODO:: In this question, Sum of Two Array means Sum using Carry Method.
+// TODO:: In this Question, Sum of Two Array means Sum using Carry Method.
 
 #include<iostream>
 #include<vector>

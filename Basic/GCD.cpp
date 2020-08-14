@@ -1,4 +1,4 @@
-                                                    // TODO:: GCD means Greatest Common Divisor
+                                       // TODO:: GCD means Greatest Common Divisor
 
 #include<iostream>
 using namespace std;

@@ -1,6 +1,6 @@
-// TODO:: Bubble Sort in Increasing Order in this, we fix the greatest element at last.
-// TODO:: Insertion Sort in Decreasing Order means (Reverse Insertion Sort).
-// TODO:: Selection Sort in Increasing Order in this, we fix the smallest element at beginning.
+// ^ Bubble Sort in Increasing Order in this, we fix the greatest element at last.
+// & Insertion Sort in Decreasing Order means (Reverse Insertion Sort).
+// * Selection Sort in Increasing Order in this, we fix the smallest element at beginning.
 
 #include<iostream>
 #include<vector>

@@ -14,7 +14,7 @@ int Fib(int n)
     a=b;
     b=s;
   }  
-  return b; // ! Here we returned 'b' instead of 's' because for n=2, it should return 1 but instead it will return 0. 
+  return b;            // ! Here we returned 'b' instead of 's' because for n=2, it should return 1 but instead it will return 0. 
   // ? So, in fibonacci there are two exceptional case: n=0 & n=1
 }
 
@@ -43,12 +43,12 @@ void FibtillN(int check)
 int main(int args,char** argv)
 {
   int n,x;
-  // ? Print Fibonacci of Desired Number Position based Question: 
+  // & Print Fibonacci of Desired Number Position based Question: 
   //cout<<endl<<"Enter the desired number position: ";
   //cin>>n;
   //cout<<"Result of Fibonacci: "<<Fib(n)<<endl;
 
-  // ? Fibonacci till N based Question:
+  // & Fibonacci till N based Question:
   cout<<endl<<"Enter the number: ";
   cin>>x;
   cout<<"Result of Fibonacci Till N: "<<FibtillN(x);  

@@ -1,5 +1,6 @@
+// TODO:: Done 2 Questions here :->
 // ? In this Question, We take an input array from user and makes a pair of 2 number to get a target sum which was input by user.
-// ? In this Question, We take an input array from user and makes a pair of 3 number to get a target sum which was input by user.
+// * In this Question, We take an input array from user and makes a pair of 3 number to get a target sum which was input by user.
 
 #include<iostream>
 #include<vector>

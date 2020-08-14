@@ -1,6 +1,6 @@
 // TODO:: In Inverse, we swap the index with value of array. 
-// TODO:: Like:--> arr{3,4,2,0,1} swapped with its index{0,1,2,3,4} gets Inverse Array which is same as Original Array {3,4,2,0,1}. So, It is Mrirror Inverse Array.
-// TODO:: Whereas, arr{1,2,3,0} swapped with its index gets {3,0,1,2} which is not Mirror Inverse Array since not equal to Original Array after Inversing Array.
+// ! Like:--> arr{3,4,2,0,1} swapped with its index{0,1,2,3,4} gets Inverse Array which is same as Original Array {3,4,2,0,1}. So, It is Mrirror Inverse Array.
+// ? Whereas, arr{1,2,3,0} swapped with its index gets {3,0,1,2} which is not Mirror Inverse Array since not equal to Original Array after Inversing Array.
 
 #include<iostream>
 #include<vector>
