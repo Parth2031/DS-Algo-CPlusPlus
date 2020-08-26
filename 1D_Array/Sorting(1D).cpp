@@ -57,11 +57,11 @@ void InsertionSort(vector<int> &arr2)
   {
     key = arr2[i];
     j = i-1;
-     while(j >= 0 && arr2[j] < key)   // ! For Increasing order of Insertion Sort condition: arr[j] > key.
-     {
-       arr2[j + 1] = arr2[j];  
-       j = j - 1;  
-     }  
+    while(j >= 0 && arr2[j] < key)   // ! For Increasing order of Insertion Sort condition: arr[j] > key.
+    {
+      arr2[j + 1] = arr2[j];  
+      j = j - 1;  
+    }  
     arr2[j+1] = key; 
   }
 }
