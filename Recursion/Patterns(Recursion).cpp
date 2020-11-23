@@ -12,7 +12,7 @@ void Print_Star(int i)
     return;
   
   cout<<"*";
-  Print(i-1);
+  Print_Star(i-1);
 }
 
 void Pattern_1(int n,int i)
