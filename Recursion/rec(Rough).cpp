@@ -1,7 +1,14 @@
+// ! Incomplete Questions ->
+// * All Index Of Numbers (checking array)
+// * Sum Of Digits in String (1 case) [?]
+// * Pallindrome of strings (1 case)
+// * Move Chararcters (1 case)               { Didn't Understood }
+
 // TODO: Remaining Questions (Unattempted) -->    
-// ? Number To Strings, Sum Of Digits in String & String One Two are Reverse(Recursion).   
-// ? Pallindrome of strings & Move Characters (Recursion).
-// ? Remove Adjacent Duplicates & Separate Duplicates (Recursion).
+// ? Binomial Pattern
+// ? Number To Strings(Recursion).   
+// ? Move Characters (Recursion).
+// ? Separate Duplicates (Recursion).
 
 
 #include<iostream>
