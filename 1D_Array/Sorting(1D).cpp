@@ -1,12 +1,13 @@
 // ^ Bubble Sort in Increasing Order in this, we fix the greatest element at last.
 // & Insertion Sort in Decreasing Order means (Reverse Insertion Sort).
 // * Selection Sort in Increasing Order in this, we fix the smallest element at beginning.
+// ? Sorted Array 
 
 #include<iostream>
 #include<vector>
 using namespace std;
 
-void input(vector<int> &arr1,vector<int> &arr2,vector<int> &arr3)
+void input(vector<int>& arr,vector<int> &arr1,vector<int> &arr2,vector<int> &arr3)
 {
   for(int i=0;i<arr1.size();i++)
     cin>>arr1[i];
@@ -14,9 +15,11 @@ void input(vector<int> &arr1,vector<int> &arr2,vector<int> &arr3)
     cin>>arr2[i];
   for(int i=0;i<arr3.size();i++)
     cin>>arr3[i];    
+  for(int i=0;i<arr3.size();i++)
+    cin>>arr[i];    
 }
 
-void display(vector<int>& arr1,vector<int>& arr2,vector<int>& arr3)
+void display(vector<int>& arr,vector<int>& arr1,vector<int>& arr2,vector<int>& arr3)
 {
   cout<<"Bubble Sort: ";  
   for(int i:arr1)
@@ -28,6 +31,10 @@ void display(vector<int>& arr1,vector<int>& arr2,vector<int>& arr3)
   cout<<endl;
   cout<<"Selection Sort: ";
   for(int i:arr3)
+    cout<<i<<" ";
+  cout<<endl;
+  cout<<"Sorted Array: ";
+  for(int i:arr)
     cout<<i<<" ";
   cout<<endl;
 }
@@ -66,7 +73,7 @@ void InsertionSort(vector<int> &arr2)
   }
 }
 
-void SelectionSort(vector<int> & arr3)
+void SelectionSort(vector<int> &arr3)
 {
   for(int i=0;i<arr3.size();i++)
   {
@@ -84,6 +91,26 @@ void SelectionSort(vector<int> & arr3)
   }  
 }
 
+void SortedArray(vector<int> &arr) 
+{
+  bool flag = true;
+  int temp;
+  while(flag) 
+  {
+    flag = false;
+    for(int i = 0;i < arr.size()-1;i++) 
+    {
+      if(arr[i] > arr[i+1]) 
+      {
+       temp = arr[i];
+       arr[i] = arr[i+1];
+       arr[i+1] = temp;
+       flag = true;
+      }
+    }
+  }
+}
+
 int main(int args,char** argv)
 {
   int n;
@@ -93,12 +120,13 @@ int main(int args,char** argv)
     exit(0);
   else
   {  
-   vector<int> arr1(n,0),arr2(n,0),arr3(n,0);
+   vector<int> arr(n,0),arr1(n,0),arr2(n,0),arr3(n,0);
    cout<<"Enter the 3 Array's: "<<endl;
-   input(arr1,arr2,arr3);
+   input(arr,arr1,arr2,arr3);
    BubbleSort(arr1);
    InsertionSort(arr2);
    SelectionSort(arr3);
+   SortedArray(arr);
    display(arr1,arr2,arr3);     
    } 
   return 0;

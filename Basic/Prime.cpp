@@ -45,7 +45,7 @@ int main(int args, char** argv)
   cin>>x;
 
   // ? Check isPrime based Question:
-  // int res=checkPrime(x);
+  // int res=isPrime(x);
   // if(res<2)
   //   cout<<"Prime No.";
   // else

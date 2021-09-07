@@ -11,8 +11,8 @@ int main(int args,char** argv)
   while (n>0)
   {
     int k=n%10;
-    n=n/10;
     z=(z*10)+k;
+    n=n/10;
   }
   cout<<z;
   return 0;
