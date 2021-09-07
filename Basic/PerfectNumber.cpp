@@ -17,7 +17,7 @@ int checkPerfectNumber(int n)
 int main(int args, char** argv)
 {
   int n;
-  cout<<"Enter the number to find it is a Perfect Number or not: ";
+  cout<<"Enter the number: ";
   cin>>n;
   cout<<"Checking it is Perfect Number or not: ";
   int res = checkPerfectNumber(n);
