@@ -1,4 +1,4 @@
-// TODO:: There are 2 Questions: isPrime and PrimetillN.
+// TODO:: There are 3 Questions: isPrime, PrimetillN and Checking Multiple "N" Prime Numbers.
 
 #include<iostream>
 using namespace std;
@@ -38,6 +38,32 @@ void PrimetillN(int y)
   }
 }
 
+void CheckMultiplePrimeNumbers(int t)
+{
+  int n;
+  for(int i=0;i<t;i++)
+  {
+    cin>>n;
+    bool flag=true;
+
+    if(n==0 || n==1)
+      flag=false;
+    for(int div=2; (div*2)<=n; div++)
+    {
+      if(n%div == 0)
+      {
+        flag=false;
+        break;
+      }  
+    }
+
+    if(flag)
+      cout<<"Prime"<<endl;
+    else
+      cout<<"NotPrime "<<endl;
+  }
+}
+
 int main(int args, char** argv)
 {
   int x;
@@ -54,6 +80,13 @@ int main(int args, char** argv)
   // ? Prime till N based Question:
   //for(int i=0;i<=x;i++)
     //PrimetillN(i);
+
+  // ? Checking Multiple N Prime Numbers:
+  // int t;
+  // cout<<endl<<"Enter No. of Times to Input a Number: ";
+  // cin>>t;
+  // cout<<"Checking Whether the Given Numbers are Prime or Not: ";
+  // CheckMultiplePrimeNumbers(t);
 
   return 0;
 }
