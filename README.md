@@ -1,2 +1,3 @@
-# DS-Algo
-Data Structure and Algorithms in C++ and Java
+# DS-Algo (C++)
+
+Data Structure and Algorithms in C++ 
