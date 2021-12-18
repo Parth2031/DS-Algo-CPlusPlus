@@ -1,5 +1,22 @@
+// ^ There are 2 Problems here - Frequency of Digit & Total Occurences of a Number.
+// ? Total Occurences of a Number - In this, We check the occurences of the key starting from 1 to number(n) 
+// * Example - Number has "21" with key=2 has "2" four times ranging from 1-20. 
+
 #include <iostream>
 using namespace std;
+
+int FrequencyOfDigit(int n, int key)
+{
+  int counter = 0;
+  while(n!=0)
+  {
+    int digit = n % 10;
+    if(digit == key)
+      counter++;
+    n = n /10;
+  }
+  return counter;
+}
 
 int TotalOccuranceOfNumber(int n, int key)
 {
@@ -31,6 +48,7 @@ int main(int args, char** argv)
   cin>>n;
   cout<<"Enter the number to be checked: ";
   cin>>key;
+  cout<<"Frequency of Digit: "<<FrequencyOfDigit(n, key)<<endl;
   cout<<"Number matching the key: "<<TotalOccuranceOfNumber(n, key)<<endl;
   return 0;
 }
