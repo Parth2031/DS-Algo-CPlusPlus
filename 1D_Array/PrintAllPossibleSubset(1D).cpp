@@ -1,10 +1,11 @@
-//  TODO:: This Question is solved using (Bit Manipulation) where the element is printed when it's "bit is ON" so we will use "i" as Bit Counter.
+// ^ This Question is solved using (Bit Manipulation).
+// ! Where the element is printed when it's "bit is ON" so we will use "i" as Bit Counter.
 // ? Remember: In Question of allPossibleSubset, it's output are "2^n number" where n-->size of array.
 // * Example: 7,2,9 -->  [],[7 ],[2 ],[7 2 ],[7 9 ],[2 9 ],[7 2 9 ].
 
-#include<iostream>
-#include<vector>
-#include<cmath>
+#include <iostream>
+#include <vector>
+#include <cmath>
 using namespace std;
 
 void input(vector<int> &arr)
@@ -15,8 +16,8 @@ void input(vector<int> &arr)
 
 void PrintAllPossibleSubset(vector<int> &arr,int n)
 {
-  int count=pow(2,n);
-  for(int i=0;i<count;i++)
+  int count = pow(2,n);
+  for(int i=0; i<count; i++)
   {
     cout<<"[";
     for(int j=0;j<arr.size();j++)

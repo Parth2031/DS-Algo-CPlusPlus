@@ -1,6 +1,8 @@
-#include<iostream>
-#include<cctype>
-#include<vector>
+// ^ Finding the Index of the Element 
+
+#include <iostream>
+#include <cctype>
+#include <vector>
 using namespace std;
 
 void input(vector<int> &arr)
@@ -13,7 +15,7 @@ int IndexOnWhichElementFound(vector<int> &arr,int x)
 {
   for(int i=0;i<arr.size();i++)
   {
-    if(x==arr[i])
+    if(x == arr[i])
       return i; 
   } 
   return -1; 
