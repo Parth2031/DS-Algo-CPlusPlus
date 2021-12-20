@@ -1,6 +1,6 @@
-// TODO:: Saddle Point of Matrix means Index Point with the least value in the row and the maximum value in the column.
+// TODO:: Rotating by 90 Degree means
 
-// ~ It works on Square Matrix. (r == c)
+// ~ 
 
 #include<iostream>
 #include<vector>
@@ -15,7 +15,7 @@ void input(vector<vector<int>> &arr)
   }
 }
 
-void SaddlePointOfMatrix(vector<vector<int>> &arr, int n, int m)
+void RotateBy90Degree(vector<vector<int>> &arr, int n, int m)
 {
   
 }
@@ -32,8 +32,8 @@ int main(int args, char** argv)
     vector<vector<int>> arr(r,vector<int>(c,0));
     cout<<"Enter the Matrix: ";
     input(arr);
-    cout<<"Saddle Point of the Matrix are: ";  
-    SaddlePointOfMatrix(arr,r,c);
+    cout<<"Matrix after Rotating by 90 Degree: ";  
+    RotateBy90Degree(arr,r,c);
     cout<<endl;
   }
   return 0;

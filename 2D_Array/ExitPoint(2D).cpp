@@ -11,6 +11,7 @@
 // &           1 0 0 0                    Result is (1,3)
 // &           0 0 0 0
 // &           1 0 1 0  
+// ~ It works on Square Matrix. (r == c)
 
 #include<iostream>
 #include<vector>
