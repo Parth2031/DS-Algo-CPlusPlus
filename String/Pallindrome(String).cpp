@@ -3,6 +3,8 @@
 // & In this, A Pallindrome means if reverse of the string is same as starting string. Example:--> abbcca,abba,etc.
 // ? In this, Lowercase Characters are treated same as Uppercase Characters.
 // * isPallindrome Question was solved using 2 methods--> String and Character Array.
+// ^ Print All Pallindromic SubStrings
+// ~ Example - "abcc" as "a", "b", "c", "cc" 
 
 #include<iostream>
 #include<string>
@@ -27,10 +29,10 @@ string convertLowerToUpper(string &str)
 
 bool isPallindrome(string str)
 {
-  int start=0,end=str.length()-1;
-  while(start<=end)
+  int start = 0, end = str.length()-1;
+  while(start <= end)
   {
-    if(str[start]!=str[end])
+    if(str[start] != str[end])
       return false; 
     start++;
     end--;    
@@ -38,10 +40,10 @@ bool isPallindrome(string str)
   return true; 
 }
 
-int CountOfPallindromeSubstring(string str)
+int CountOfPallindromeSubstringAndPrint(string str)
 { 
   int count = 0;
-  cout<<"All the Pallindromic Substrings are: "<<endl;
+  cout<<"All the Pallindromic Substrings are: ";
   for(int i=0;i<str.length();i++)
   {
     for(int j=1;j<=str.length()-i;j++)
@@ -61,18 +63,14 @@ int CountOfPallindromeSubstring(string str)
   return count;
 }    
 
-
 int main(int args,char** argv)
 {
   string str;
   cout<<endl<<"Enter the string: ";
   cin>>str;                          // ! Alternative: getline(cin,str); 
-  // convertLowerToUpper(str);
-  // if(isPallindrome(str)==true)
-  //   cout<<"String is Pallindrome: "<<"True"<<endl;
-  // else
-  //   cout<<"String is Pallindrome: "<<"False"<<endl;
-  cout<<endl<<"No. of Pallindrome Substrings are: "<<CountOfPallindromeSubstring(str); 
+  convertLowerToUpper(str);
+  cout<<"String is Pallindrome or Not: "<<boolalpha<<isPallindrome(str)<<endl;
+  cout<<endl<<"No. of Pallindrome Substrings are: "<<CountOfPallindromeSubstringAndPrint(str)<<endl; 
   return 0;
 }
 
