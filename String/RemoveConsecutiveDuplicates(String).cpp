@@ -7,9 +7,10 @@ using namespace std;
 
 void RemoveConsecutiveDuplicates(string str)
 {
+  char ch1,ch2;
+  
   // ! With ASCII Value ->
   int index_1,index_2,count=0;
-  char ch1,ch2;
   for(int i=1; i<=str.length(); i++) 
   { 
     ch1 = str[i-1];
@@ -36,13 +37,15 @@ void RemoveConsecutiveDuplicates(string str)
   }  
   
   // ! Without ASCII Value ->
-  for(int i=1; i<=str.length(); i++) 
-  { 
-    char ch1 = str[i-1];
-    char ch2 = str[i];  
-    if(ch1 != ch2)                           // ! Removing All Consecutive Duplicates -->
-      cout<<ch1;
-  }
+  // for(int i=0; i<str.length(); i++) 
+  // { 
+  //   ch1 = str[i];
+  //   ch2 = str[i+1];  
+  //   if(ch1 != ch2)                           // ! Removing All Consecutive Duplicates -->
+  //     cout<<ch1;
+  //   if(i == str.length()-1)
+  //     cout<<ch2;  
+  // }
 }   
 
 string RemoveConsecutiveDuplicatesBetter(string str)

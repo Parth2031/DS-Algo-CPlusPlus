@@ -6,9 +6,10 @@ using namespace std;
 
 void CompressionOfString(string str)
 {
+  char ch1,ch2;
+
   // ! With ASCII Value ->
   // int index_1,index_2,count=1;
-  // char ch1,ch2;
   // for(int i=1;i<=str.length();i++) 
   // {
   //   ch1 = str[i-1];
@@ -34,8 +35,8 @@ void CompressionOfString(string str)
   int count = 1;
   for(int i=1; i<=str.length(); i++)
   {
-    char ch1 = str[i-1];
-    char ch2 = str[i];
+    ch1 = str[i-1];
+    ch2 = str[i];
     if(ch1 == ch2)
       count++;
     else

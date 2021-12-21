@@ -5,6 +5,7 @@
 // * isPallindrome Question was solved using 2 methods--> String and Character Array.
 // ^ Print All Pallindromic SubStrings
 // ~ Example - "abcc" as "a", "b", "c", "cc" 
+// ! Note - SubStr in C++ has (start, length of string) whereas, In Java, SubString has (start, end index)
 
 #include<iostream>
 #include<string>
@@ -44,13 +45,13 @@ int CountOfPallindromeSubstringAndPrint(string str)
 { 
   int count = 0;
   cout<<"All the Pallindromic Substrings are: ";
-  for(int i=0;i<str.length();i++)
+  for(int i=0; i<str.length(); i++)
   {
-    for(int j=1;j<=str.length()-i;j++)
+    for(int j=1; j<=str.length()-i; j++)
     {
       string ss = str.substr(i,j);  
       bool Pallindromic = isPallindrome(ss);
-      if(Pallindromic==true)
+      if(Pallindromic == true)
       {
         count++;
         cout<<ss<<" ";
@@ -68,7 +69,7 @@ int main(int args,char** argv)
   string str;
   cout<<endl<<"Enter the string: ";
   cin>>str;                          // ! Alternative: getline(cin,str); 
-  convertLowerToUpper(str);
+  // convertLowerToUpper(str);
   cout<<"String is Pallindrome or Not: "<<boolalpha<<isPallindrome(str)<<endl;
   cout<<endl<<"No. of Pallindrome Substrings are: "<<CountOfPallindromeSubstringAndPrint(str)<<endl; 
   return 0;
