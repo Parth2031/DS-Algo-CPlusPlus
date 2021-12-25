@@ -3,8 +3,8 @@ using namespace std;
 
 int checkPerfectNumber(int n)
 {
-  int i=1,sum=0;
-  while(i<n)
+  int i = 1,sum = 0;
+  while(i < n)
   {
     int temp = n % i;
     if(temp == 0)

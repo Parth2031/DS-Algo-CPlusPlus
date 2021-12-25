@@ -4,8 +4,8 @@
 
 // ! Main Functions :
 
-// ? .at(i) :- This Function is used to check every character of a string. Syntax :--> string defined variable.charAt(i) in a "i" loop. 
-// ? .substr(starting index,length of string) :- This function is used to check a string from starting index to ending index.
+// ? .at(i) :- This Function is used to check every character of a string. Syntax :--> string defined variable.at(i) in a "i" loop. 
+// ? .substr(starting index,length of string) :- This function is used to check a string from starting index to length of string.
 // * Syntax :--> string defined variable.substr(0); 
 // ? .length() :- This Function will be used as loop iterator.
 
