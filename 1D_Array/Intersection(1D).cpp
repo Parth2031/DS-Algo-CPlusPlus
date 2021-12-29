@@ -119,6 +119,6 @@ int main(int args,char** argv)
    Sort(arr1);
    Sort(arr2);
    Intersection(arr1,arr2);     
-   } 
+  } 
   return 0;
 }

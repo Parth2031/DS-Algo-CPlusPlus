@@ -58,7 +58,7 @@ char MaximumFrequencyCharacter(string str)
     }
   }
    
-  if (curr_count > max_count)   // ! This Condition tells the Last Element is Most Frequent in String. 
+  if (curr_count > max_count)    // ! This Condition tells the Last Element is Most Frequent in String. 
   { 
     max_count = curr_count; 
     result = str[str.length() - 1]; 
