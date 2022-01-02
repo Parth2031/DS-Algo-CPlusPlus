@@ -1,4 +1,4 @@
-// ? Trace of Matrices: means Addition of Main Diagonals
+// TODO:: Trace of Matrices means Addition of Main Diagonals.
 
 #include<iostream>
 #include<vector>

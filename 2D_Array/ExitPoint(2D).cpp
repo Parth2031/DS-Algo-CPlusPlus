@@ -1,4 +1,4 @@
-// ^ Exit Point of Matrix means that we have a matrix or a 2-D array that has only 1's and 0's as the values inside it.
+// TODO:: Exit Point of Matrix means that we have a matrix or a 2-D array that has only 1's and 0's as the values inside it.
 // ^                     If we encounter a 0 in the matrix we have to keep moving in the direction that we were moving, 
 // ^                     otherwise, when we encounter 1, we will take a 90 degree right turn.
 // ! Moving in East after encountering ""1" and 90 degree turn gives South 
