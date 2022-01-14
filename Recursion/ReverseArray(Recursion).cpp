@@ -37,7 +37,7 @@ void ReverseArray(vector<int> &arr, int start, int end)
 
 int IndexValue(vector<int> &arr,int vidx,int check_pos)
 {
-  if(vidx==check_pos)
+  if(vidx == check_pos)
     return arr[vidx];  
 
   IndexValue(arr,vidx+1,check_pos);
