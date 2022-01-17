@@ -1,4 +1,4 @@
-// TODO:: Checking whether an array is pallindrome or not using Recursion.
+// TODO:: Checking whether an array is Palindrome or not using Recursion.
 // ? Recursion in two ways:- Void Type and Return Type.
 
 #include<iostream>
