@@ -1,5 +1,5 @@
 // ^ In this Question, Input character is compared in string and are moved to end of string 
-// ? Example => str = {abeedxxxdee} to {abeedeedxxx} where choosen chararcter is {x}.
+// ? Example => str = {abeedxxxdee} to {abeeddeexxx} where choosen chararcter is {x}.
 
 // * String.indexOf(character/string) in Java => string.find(character/string) in C++ if true = 0 
 
